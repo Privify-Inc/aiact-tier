@@ -1,0 +1,571 @@
+{
+  "name": "base-zero-shot",
+  "backend": "hf",
+  "model": "Qwen/Qwen3-4B",
+  "adapter": null,
+  "mode": "full",
+  "gold_status": "AI CROSS-CHECKED, NOT LAWYER-REVIEWED",
+  "metrics": {
+    "n": 109,
+    "tier_accuracy": 0.6972477064220184,
+    "tier_accuracy_ci95": [
+      0.6146788990825688,
+      0.7889908256880734
+    ],
+    "tier_macro_f1": 0.5439526706479879,
+    "exact_match": 0.41284403669724773,
+    "exact_match_ci95": [
+      0.3211009174311927,
+      0.5045871559633027
+    ],
+    "provision_micro": {
+      "precision": 0.40816326530612246,
+      "recall": 0.425531914893617,
+      "f1": 0.4166666666666667
+    },
+    "invalid_output_rate": 0.01834862385321101,
+    "hallucinated_provision_rate": 0.04854368932038835,
+    "examples_with_hallucinated_provision": 0.045871559633027525,
+    "critical_error_rate": 0.027522935779816515,
+    "under_classification_rate": 0.2018348623853211,
+    "over_classification_rate": 0.08256880733944955,
+    "per_tier": {
+      "prohibited": {
+        "precision": 0.6666666666666666,
+        "recall": 0.23529411764705882,
+        "f1": 0.3478260869565218,
+        "support": 17
+      },
+      "high_risk": {
+        "precision": 0.7647058823529411,
+        "recall": 0.9454545454545454,
+        "f1": 0.8455284552845528,
+        "support": 55
+      },
+      "limited_transparency": {
+        "precision": 0.5,
+        "recall": 0.23076923076923078,
+        "f1": 0.3157894736842105,
+        "support": 13
+      },
+      "minimal": {
+        "precision": 0.6296296296296297,
+        "recall": 0.7083333333333334,
+        "f1": 0.6666666666666667,
+        "support": 24
+      }
+    },
+    "confusion": {
+      "prohibited": {
+        "prohibited": 4,
+        "high_risk": 10,
+        "limited_transparency": 1,
+        "minimal": 0,
+        "invalid": 2
+      },
+      "high_risk": {
+        "prohibited": 0,
+        "high_risk": 52,
+        "limited_transparency": 1,
+        "minimal": 2,
+        "invalid": 0
+      },
+      "limited_transparency": {
+        "prohibited": 2,
+        "high_risk": 0,
+        "limited_transparency": 3,
+        "minimal": 8,
+        "invalid": 0
+      },
+      "minimal": {
+        "prohibited": 0,
+        "high_risk": 6,
+        "limited_transparency": 1,
+        "minimal": 17,
+        "invalid": 0
+      }
+    },
+    "per_category_exact": {
+      "H_1a": 1.0,
+      "H_1b": 0.0,
+      "H_1c": 0.0,
+      "H_2": 1.0,
+      "H_3a": 0.5,
+      "H_3b": 0.3333333333333333,
+      "H_3c": 0.0,
+      "H_3d": 1.0,
+      "H_4a": 1.0,
+      "H_4b": 0.0,
+      "H_5a": 1.0,
+      "H_5b": 0.6666666666666666,
+      "H_5c": 0.5,
+      "H_5d": 0.6666666666666666,
+      "H_61": 0.0,
+      "H_6a": 1.0,
+      "H_6b": 0.0,
+      "H_6c": 0.0,
+      "H_6d": 0.0,
+      "H_6e": 0.0,
+      "H_7a": 0.0,
+      "H_7b": 0.0,
+      "H_7c": 0.0,
+      "H_7d": 0.0,
+      "H_8a": 0.5,
+      "H_8b": 0.0,
+      "L_1": 0.3333333333333333,
+      "L_2": 0.3333333333333333,
+      "L_4a": 0.0,
+      "L_4b": 0.0,
+      "M": 0.9230769230769231,
+      "P_a": 1.0,
+      "P_b": 0.0,
+      "P_c": 0.0,
+      "P_d": 1.0,
+      "P_e": 1.0,
+      "P_f": 0.0,
+      "P_g": 0.0,
+      "P_h": 0.0,
+      "combo": 0.0,
+      "expert": 0.25,
+      "hard": 0.25
+    }
+  },
+  "predictions": [
+    {
+      "id": "G-001",
+      "raw": "{\"tier\": \"prohibited\", \"provisions\": [\"Art. 5(1)(a)\"]}"
+    },
+    {
+      "id": "G-002",
+      "raw": "{\n  \"tier\": \"prohibited\",\n  \"provisions\": [\n    \"Art. 5(1)(a)\"\n  ]\n}"
+    },
+    {
+      "id": "G-003",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-004",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(5)(a)\",\n    \"Annex III(4)(a)\"\n  ]\n}"
+    },
+    {
+      "id": "G-005",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(3)(a)\",\n    \"Annex III(5)(a)\"\n  ]\n}"
+    },
+    {
+      "id": "G-006",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-007",
+      "raw": "{\n  \"tier\": \"prohibited\",\n  \"provisions\": [\n    \"Art. 5(1)(d)\"\n  ]\n}"
+    },
+    {
+      "id": "G-008",
+      "raw": "{\"tier\": \"prohibited\", \"provisions\": [\"Art. 5(1)(e)\"]}"
+    },
+    {
+      "id": "G-009",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(3)\"]}"
+    },
+    {
+      "id": "G-010",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(c)\", \"Annex III(3)(d)\"]}"
+    },
+    {
+      "id": "G-011",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(g)\", \"Annex III(3)(d)\"]}"
+    },
+    {
+      "id": "G-012",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(1)(a)\",\n    \"Annex III(6)(d)\",\n    \"Annex III(6)(e)\"\n  ]\n}"
+    },
+    {
+      "id": "G-013",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "G-014",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "G-015",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(b)\", \"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-016",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-017",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(3)\"]}"
+    },
+    {
+      "id": "G-018",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(c)\", \"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-019",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-020",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-021",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\", \"Annex III(3)(b)\", \"Annex III(3)(c)\"]}"
+    },
+    {
+      "id": "G-022",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-023",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(d)\"]}"
+    },
+    {
+      "id": "G-024",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(b)\"]}"
+    },
+    {
+      "id": "G-025",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-026",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(d)\"]}"
+    },
+    {
+      "id": "G-027",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-028",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-029",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\", \"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "G-030",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(4)(a)\",\n    \"Annex III(4)(b)\"\n  ]\n}"
+    },
+    {
+      "id": "G-031",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-032",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-033",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(5)(b) (high_risk): Evaluating creditworthiness or establishing credit scores of individuals (fraud detection excepted)\"\n  ]\n}"
+    },
+    {
+      "id": "G-034",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-035",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\"Annex III(5)(c) (high_risk): Risk assessment and pricing for individuals in life and health insurance.\"]\n}"
+    },
+    {
+      "id": "G-036",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(c)\"]}"
+    },
+    {
+      "id": "G-037",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(d)\"]}"
+    },
+    {
+      "id": "G-038",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(d)\"]}"
+    },
+    {
+      "id": "G-039",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(6)(a)\"]}"
+    },
+    {
+      "id": "G-040",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(6)(d)\",\n    \"Annex III(6)(e)\"\n  ]\n}"
+    },
+    {
+      "id": "G-041",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(6)(e)\"]}"
+    },
+    {
+      "id": "G-042",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(6)(d) (high_risk): Assessing a person's risk of offending or re-offending (not solely by profiling), or assessing personality traits or past criminal behavior.\"\n  ]\n}"
+    },
+    {
+      "id": "G-043",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(6)(e)\", \"Annex III(6)(d)\"]}"
+    },
+    {
+      "id": "G-044",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(7)(d)\"]}"
+    },
+    {
+      "id": "G-045",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(7)(d)\"]}"
+    },
+    {
+      "id": "G-046",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(7)(a)\", \"Annex III(7)(c)\"]}"
+    },
+    {
+      "id": "G-047",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "G-048",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(8)(a)\"]}"
+    },
+    {
+      "id": "G-049",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\", \"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "G-050",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(2)\",\n    \"Art. 6(1)\"\n  ]\n}"
+    },
+    {
+      "id": "G-051",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-052",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-053",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-054",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(2)\"]}"
+    },
+    {
+      "id": "G-055",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-056",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-057",
+      "raw": "{\"tier\": \"prohibited\", \"provisions\": [\"Art. 5(1)(e)\"]}"
+    },
+    {
+      "id": "G-058",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-059",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-060",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-061",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-062",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-063",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-064",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-065",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-066",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-067",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-068",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-069",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-070",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-071",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-072",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-073",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\", \"Annex III(6)(d)\"]}"
+    },
+    {
+      "id": "G-074",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(3)(a)\",\n    \"Annex III(5)(a)\"\n  ]\n}"
+    },
+    {
+      "id": "G-075",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\", \"Annex III(3)(b)\"], \"reason\": \"The AI system uses emotion recognition to assess the emotional state of call-center agents, which is used to determine access or admission to roles, and to"
+    },
+    {
+      "id": "G-076",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-077",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-078",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-079",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-080",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-081",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-082",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-083",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-084",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-085",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "G-086",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(b)\", \"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-087",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-088",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(5)(b) (high_risk): Evaluating creditworthiness or establishing credit scores of individuals (fraud detection excepted)\"\n  ]\n}"
+    },
+    {
+      "id": "G-089",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\", \"Annex III(3)(b)\", \"Annex III(3)(c)\"]}"
+    },
+    {
+      "id": "G-090",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "G-091",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\"Annex III(1)(c)\", \"Annex III(4)(a)\"]\n}"
+    },
+    {
+      "id": "G-092",
+      "raw": "{\n  \"tier\": \"high_risk\",\n  \"provisions\": [\n    \"Annex III(1)(c) (high_risk): Emotion recognition systems (outside the workplace and education settings that are prohibited)\",\n    \"Annex III(3)(d) (high_risk): Monitoring and detecting"
+    },
+    {
+      "id": "G-093",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(c)\"]}"
+    },
+    {
+      "id": "N-001",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-002",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-003",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    },
+    {
+      "id": "N-004",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-005",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-006",
+      "raw": "{\"tier\": \"limited_transparency\", \"provisions\": [\"Art. 50(2)\"]}"
+    },
+    {
+      "id": "N-007",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(c)\"]}"
+    },
+    {
+      "id": "N-008",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "N-009",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "N-010",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-011",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-012",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-013",
+      "raw": "{\"tier\": \"minimal\", \"provisions\": []}"
+    },
+    {
+      "id": "N-014",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "N-015",
+      "raw": "{\"tier\": \"prohibited\", \"provisions\": [\"Art. 5(1)(e)\"]}"
+    },
+    {
+      "id": "N-016",
+      "raw": "{\"tier\": \"high_risk\", \"provisions\": [\"Annex III(2)\"]}"
+    }
+  ]
+}

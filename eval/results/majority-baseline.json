@@ -1,0 +1,571 @@
+{
+  "name": "majority-baseline",
+  "backend": "majority",
+  "model": null,
+  "adapter": null,
+  "mode": "full",
+  "gold_status": "AI CROSS-CHECKED, NOT LAWYER-REVIEWED",
+  "metrics": {
+    "n": 109,
+    "tier_accuracy": 0.5045871559633027,
+    "tier_accuracy_ci95": [
+      0.42201834862385323,
+      0.5963302752293578
+    ],
+    "tier_macro_f1": 0.1676829268292683,
+    "exact_match": 0.0,
+    "exact_match_ci95": [
+      0.0,
+      0.0
+    ],
+    "provision_micro": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "invalid_output_rate": 0.0,
+    "hallucinated_provision_rate": 0.0,
+    "examples_with_hallucinated_provision": 0.0,
+    "critical_error_rate": 0.0,
+    "under_classification_rate": 0.1559633027522936,
+    "over_classification_rate": 0.3394495412844037,
+    "per_tier": {
+      "prohibited": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 17
+      },
+      "high_risk": {
+        "precision": 0.5045871559633027,
+        "recall": 1.0,
+        "f1": 0.6707317073170732,
+        "support": 55
+      },
+      "limited_transparency": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 13
+      },
+      "minimal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 24
+      }
+    },
+    "confusion": {
+      "prohibited": {
+        "prohibited": 0,
+        "high_risk": 17,
+        "limited_transparency": 0,
+        "minimal": 0,
+        "invalid": 0
+      },
+      "high_risk": {
+        "prohibited": 0,
+        "high_risk": 55,
+        "limited_transparency": 0,
+        "minimal": 0,
+        "invalid": 0
+      },
+      "limited_transparency": {
+        "prohibited": 0,
+        "high_risk": 13,
+        "limited_transparency": 0,
+        "minimal": 0,
+        "invalid": 0
+      },
+      "minimal": {
+        "prohibited": 0,
+        "high_risk": 24,
+        "limited_transparency": 0,
+        "minimal": 0,
+        "invalid": 0
+      }
+    },
+    "per_category_exact": {
+      "H_1a": 0.0,
+      "H_1b": 0.0,
+      "H_1c": 0.0,
+      "H_2": 0.0,
+      "H_3a": 0.0,
+      "H_3b": 0.0,
+      "H_3c": 0.0,
+      "H_3d": 0.0,
+      "H_4a": 0.0,
+      "H_4b": 0.0,
+      "H_5a": 0.0,
+      "H_5b": 0.0,
+      "H_5c": 0.0,
+      "H_5d": 0.0,
+      "H_61": 0.0,
+      "H_6a": 0.0,
+      "H_6b": 0.0,
+      "H_6c": 0.0,
+      "H_6d": 0.0,
+      "H_6e": 0.0,
+      "H_7a": 0.0,
+      "H_7b": 0.0,
+      "H_7c": 0.0,
+      "H_7d": 0.0,
+      "H_8a": 0.0,
+      "H_8b": 0.0,
+      "L_1": 0.0,
+      "L_2": 0.0,
+      "L_4a": 0.0,
+      "L_4b": 0.0,
+      "M": 0.0,
+      "P_a": 0.0,
+      "P_b": 0.0,
+      "P_c": 0.0,
+      "P_d": 0.0,
+      "P_e": 0.0,
+      "P_f": 0.0,
+      "P_g": 0.0,
+      "P_h": 0.0,
+      "combo": 0.0,
+      "expert": 0.0,
+      "hard": 0.0
+    }
+  },
+  "predictions": [
+    {
+      "id": "G-001",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-002",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-003",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-004",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-005",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-006",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-007",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-008",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-009",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-010",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-011",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-012",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-013",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-014",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-015",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-016",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-017",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-018",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-019",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-020",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-021",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-022",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-023",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-024",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-025",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-026",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-027",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-028",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-029",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-030",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-031",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-032",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-033",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-034",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-035",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-036",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-037",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-038",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-039",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-040",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-041",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-042",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-043",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-044",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-045",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-046",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-047",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-048",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-049",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-050",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-051",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-052",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-053",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-054",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-055",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-056",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-057",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-058",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-059",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-060",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-061",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-062",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-063",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-064",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-065",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-066",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-067",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-068",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-069",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-070",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-071",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-072",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-073",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-074",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-075",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-076",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-077",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-078",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-079",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-080",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-081",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-082",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-083",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-084",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-085",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-086",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-087",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-088",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-089",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-090",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-091",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-092",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-093",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-001",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-002",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-003",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-004",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-005",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-006",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-007",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-008",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-009",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-010",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-011",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-012",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-013",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-014",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-015",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-016",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[]}"
+    }
+  ]
+}

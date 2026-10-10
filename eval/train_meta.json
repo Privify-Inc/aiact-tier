@@ -1,0 +1,28 @@
+{
+  "base_model": "Qwen/Qwen3-4B",
+  "args": {
+    "model": "Qwen/Qwen3-4B",
+    "train": "data/train.jsonl",
+    "val": "data/val.jsonl",
+    "out": "outputs/aiact-tier-lora",
+    "epochs": 2.0,
+    "lr": 0.0002,
+    "batch_size": 2,
+    "grad_accum": 8,
+    "max_len": 512,
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "seed": 13,
+    "max_steps": -1,
+    "end_token": null,
+    "no_grad_ckpt": false,
+    "load_4bit": true
+  },
+  "train_sha256": "fa0d9044e7322da7bc8b92d23d7e3cce1345265e44a2a57659c4d2c19d1007a6",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.16.1",
+    "peft": "0.20.0"
+  }
+}

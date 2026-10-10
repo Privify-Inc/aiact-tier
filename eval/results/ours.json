@@ -1,0 +1,571 @@
+{
+  "name": "ours",
+  "backend": "hf",
+  "model": "Qwen/Qwen3-4B",
+  "adapter": "outputs/aiact-tier-lora",
+  "mode": "short",
+  "gold_status": "AI CROSS-CHECKED, NOT LAWYER-REVIEWED",
+  "metrics": {
+    "n": 109,
+    "tier_accuracy": 0.8073394495412844,
+    "tier_accuracy_ci95": [
+      0.7339449541284404,
+      0.8807339449541285
+    ],
+    "tier_macro_f1": 0.7477405115605649,
+    "exact_match": 0.6880733944954128,
+    "exact_match_ci95": [
+      0.6055045871559633,
+      0.7706422018348624
+    ],
+    "provision_micro": {
+      "precision": 0.6881720430107527,
+      "recall": 0.6808510638297872,
+      "f1": 0.6844919786096257
+    },
+    "invalid_output_rate": 0.0,
+    "hallucinated_provision_rate": 0.021052631578947368,
+    "examples_with_hallucinated_provision": 0.01834862385321101,
+    "critical_error_rate": 0.009174311926605505,
+    "under_classification_rate": 0.10091743119266056,
+    "over_classification_rate": 0.09174311926605505,
+    "per_tier": {
+      "prohibited": {
+        "precision": 0.8,
+        "recall": 0.47058823529411764,
+        "f1": 0.5925925925925927,
+        "support": 17
+      },
+      "high_risk": {
+        "precision": 0.7910447761194029,
+        "recall": 0.9636363636363636,
+        "f1": 0.8688524590163933,
+        "support": 55
+      },
+      "limited_transparency": {
+        "precision": 0.6923076923076923,
+        "recall": 0.6923076923076923,
+        "f1": 0.6923076923076923,
+        "support": 13
+      },
+      "minimal": {
+        "precision": 0.9473684210526315,
+        "recall": 0.75,
+        "f1": 0.8372093023255814,
+        "support": 24
+      }
+    },
+    "confusion": {
+      "prohibited": {
+        "prohibited": 8,
+        "high_risk": 9,
+        "limited_transparency": 0,
+        "minimal": 0,
+        "invalid": 0
+      },
+      "high_risk": {
+        "prohibited": 0,
+        "high_risk": 53,
+        "limited_transparency": 1,
+        "minimal": 1,
+        "invalid": 0
+      },
+      "limited_transparency": {
+        "prohibited": 2,
+        "high_risk": 2,
+        "limited_transparency": 9,
+        "minimal": 0,
+        "invalid": 0
+      },
+      "minimal": {
+        "prohibited": 0,
+        "high_risk": 3,
+        "limited_transparency": 3,
+        "minimal": 18,
+        "invalid": 0
+      }
+    },
+    "per_category_exact": {
+      "H_1a": 0.3333333333333333,
+      "H_1b": 0.5,
+      "H_1c": 0.5,
+      "H_2": 0.6666666666666666,
+      "H_3a": 1.0,
+      "H_3b": 1.0,
+      "H_3c": 1.0,
+      "H_3d": 1.0,
+      "H_4a": 1.0,
+      "H_4b": 0.5,
+      "H_5a": 1.0,
+      "H_5b": 1.0,
+      "H_5c": 1.0,
+      "H_5d": 0.6666666666666666,
+      "H_61": 1.0,
+      "H_6a": 1.0,
+      "H_6b": 1.0,
+      "H_6c": 1.0,
+      "H_6d": 1.0,
+      "H_6e": 0.5,
+      "H_7a": 0.0,
+      "H_7b": 1.0,
+      "H_7c": 0.5,
+      "H_7d": 1.0,
+      "H_8a": 1.0,
+      "H_8b": 1.0,
+      "L_1": 1.0,
+      "L_2": 1.0,
+      "L_4a": 0.5,
+      "L_4b": 0.0,
+      "M": 1.0,
+      "P_a": 1.0,
+      "P_b": 0.5,
+      "P_c": 0.3333333333333333,
+      "P_d": 1.0,
+      "P_e": 1.0,
+      "P_f": 0.0,
+      "P_g": 0.5,
+      "P_h": 0.0,
+      "combo": 0.3333333333333333,
+      "expert": 0.4375,
+      "hard": 0.25
+    }
+  },
+  "predictions": [
+    {
+      "id": "G-001",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(a)\"]}"
+    },
+    {
+      "id": "G-002",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(a)\"]}"
+    },
+    {
+      "id": "G-003",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(b)\"]}"
+    },
+    {
+      "id": "G-004",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(a)\"]}"
+    },
+    {
+      "id": "G-005",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(c)\"]}"
+    },
+    {
+      "id": "G-006",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-007",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(d)\"]}"
+    },
+    {
+      "id": "G-008",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(e)\"]}"
+    },
+    {
+      "id": "G-009",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "G-010",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(1)(b)\"]}"
+    },
+    {
+      "id": "G-011",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(g)\"]}"
+    },
+    {
+      "id": "G-012",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(d)\"]}"
+    },
+    {
+      "id": "G-013",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(e)\"]}"
+    },
+    {
+      "id": "G-014",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(1)(a)\"]}"
+    },
+    {
+      "id": "G-015",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(1)(b)\"]}"
+    },
+    {
+      "id": "G-016",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(1)(b)\",\"Art. 50(3)\"]}"
+    },
+    {
+      "id": "G-017",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Art. 50(3)\"]}"
+    },
+    {
+      "id": "G-018",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Art. 50(3)\",\"Annex III(1)(c)\"]}"
+    },
+    {
+      "id": "G-019",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-020",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(2)\"]}"
+    },
+    {
+      "id": "G-021",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-022",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-023",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(b)\"]}"
+    },
+    {
+      "id": "G-024",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(b)\"]}"
+    },
+    {
+      "id": "G-025",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(c)\"]}"
+    },
+    {
+      "id": "G-026",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(d)\"]}"
+    },
+    {
+      "id": "G-027",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-028",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-029",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(c)\"]}"
+    },
+    {
+      "id": "G-030",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "G-031",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-032",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-033",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-034",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-035",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(c)\"]}"
+    },
+    {
+      "id": "G-036",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(c)\"]}"
+    },
+    {
+      "id": "G-037",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(d)\"]}"
+    },
+    {
+      "id": "G-038",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-039",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(a)\"]}"
+    },
+    {
+      "id": "G-040",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(b)\"]}"
+    },
+    {
+      "id": "G-041",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(c)\"]}"
+    },
+    {
+      "id": "G-042",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(d)\"]}"
+    },
+    {
+      "id": "G-043",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(e)\"]}"
+    },
+    {
+      "id": "G-044",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(b)\"]}"
+    },
+    {
+      "id": "G-045",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(b)\"]}"
+    },
+    {
+      "id": "G-046",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(b)\"]}"
+    },
+    {
+      "id": "G-047",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(d)\"]}"
+    },
+    {
+      "id": "G-048",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(8)(a)\"]}"
+    },
+    {
+      "id": "G-049",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(8)(b)\"]}"
+    },
+    {
+      "id": "G-050",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Art. 6(1)\"]}"
+    },
+    {
+      "id": "G-051",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Art. 6(1)\"]}"
+    },
+    {
+      "id": "G-052",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-053",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-054",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(2)\"]}"
+    },
+    {
+      "id": "G-055",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(2)\"]}"
+    },
+    {
+      "id": "G-056",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(4)\"]}"
+    },
+    {
+      "id": "G-057",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(b)\"]}"
+    },
+    {
+      "id": "G-058",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-059",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-060",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-061",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-062",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-063",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-064",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-065",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-066",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-067",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-068",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-069",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-070",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "G-071",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(b)\"]}"
+    },
+    {
+      "id": "G-072",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "G-073",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(b)\"]}"
+    },
+    {
+      "id": "G-074",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(3)(a)\"]}"
+    },
+    {
+      "id": "G-075",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "G-076",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-077",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(2)\"]}"
+    },
+    {
+      "id": "G-078",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-079",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-080",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-081",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(2)(a)\"]}"
+    },
+    {
+      "id": "G-082",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(c)\"]}"
+    },
+    {
+      "id": "G-083",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(8)(a)\"]}"
+    },
+    {
+      "id": "G-084",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(d)\"]}"
+    },
+    {
+      "id": "G-085",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(1)(1)(b)\"]}"
+    },
+    {
+      "id": "G-086",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(b)\"]}"
+    },
+    {
+      "id": "G-087",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-088",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\",\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-089",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\",\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "G-090",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "G-091",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(a)\"]}"
+    },
+    {
+      "id": "G-092",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\",\"Art. 50(3)\"]}"
+    },
+    {
+      "id": "G-093",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(d)\"]}"
+    },
+    {
+      "id": "N-001",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "N-002",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "N-003",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(b)\"]}"
+    },
+    {
+      "id": "N-004",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "N-005",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-006",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(4)\"]}"
+    },
+    {
+      "id": "N-007",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "N-008",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(7)(d)\"]}"
+    },
+    {
+      "id": "N-009",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(4)(b)\"]}"
+    },
+    {
+      "id": "N-010",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(6)(b)\"]}"
+    },
+    {
+      "id": "N-011",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-012",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    },
+    {
+      "id": "N-013",
+      "raw": "{\"tier\":\"limited_transparency\",\"provisions\":[\"Art. 50(1)\"]}"
+    },
+    {
+      "id": "N-014",
+      "raw": "{\"tier\":\"high_risk\",\"provisions\":[\"Annex III(5)(a)\"]}"
+    },
+    {
+      "id": "N-015",
+      "raw": "{\"tier\":\"prohibited\",\"provisions\":[\"Art. 5(1)(b)\"]}"
+    },
+    {
+      "id": "N-016",
+      "raw": "{\"tier\":\"minimal\",\"provisions\":[]}"
+    }
+  ]
+}

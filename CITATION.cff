@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this model or benchmark, please cite it as below, and cite the Qwen3 Technical Report for the base model."
+title: "Privify AI Act Risk-Tier Classifier"
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/Privify-Inc/aiact-tier"
+authors:
+  - family-names: "Tallamraju"
+    given-names: "Bhaskar"
+    affiliation: "Privify Inc."
+  - name: "Privify Inc."
+abstract: >-
+  An open model that classifies a described AI system under the EU AI Act and returns its
+  risk tier and applicable provisions. Fine-tuned from Qwen3-4B. Decision aid, not legal advice.
+references:
+  - type: article
+    title: "Qwen3 Technical Report"
+    authors:
+      - name: "Qwen Team"
+    year: 2025
+    url: "https://arxiv.org/abs/2505.09388"

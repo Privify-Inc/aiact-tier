@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+outputs/
+llama.cpp/
+*.gguf
+*.safetensors
+*.bin
+.env
+venv*/

@@ -1,0 +1,11 @@
+Privify AI Act Risk-Tier Classifier
+Author: Bhaskar Tallamraju, Privify Inc.
+
+This product includes or derives from the following third-party work:
+
+  Qwen3-4B, Copyright Alibaba Cloud / Qwen Team, licensed under the Apache License 2.0
+  https://huggingface.co/Qwen/Qwen3-4B
+
+The released model weights are a fine-tuned derivative of Qwen3-4B. We changed the model
+by LoRA fine-tuning for EU AI Act risk-tier classification. Verify this NOTICE and the
+upstream license files with counsel before release (docs/COUNSEL_MEMO.md).

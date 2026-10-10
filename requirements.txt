@@ -1,0 +1,9 @@
+# Training and inference (needs a GPU for training)
+torch>=2.4
+transformers>=4.51   # Qwen3 support starts at 4.51
+peft>=0.13
+accelerate>=1.0
+# Optional
+# gradio>=4.0        # web demo (aiact_tier.demo)
+# pytest>=8.0        # tests
+# bitsandbytes>=0.43  # only for --load-4bit (QLoRA on 16 GB GPUs)

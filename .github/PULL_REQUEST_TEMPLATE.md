@@ -1,0 +1,3 @@
+- [ ] Commits are signed off (`git commit -s`, Developer Certificate of Origin)
+- [ ] `make test` passes
+- [ ] No confidential, personal or copyrighted third-party text added
