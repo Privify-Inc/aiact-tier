@@ -1,7 +1,8 @@
 ---
 license: apache-2.0
 base_model: Qwen/Qwen3-4B
-library_name: transformers
+library_name: peft
+base_model_relation: adapter
 pipeline_tag: text-generation
 language:
 - en
@@ -15,7 +16,7 @@ tags:
 
 # Privify AI Act Risk-Tier Classifier (v0.1)
 
-**Author:** Bhaskar Tallamraju, Privify Inc. · **Fine-tuned from:**
+**Author:** Bhaskar Tallamraju, Privify Inc. · **Code and benchmark:** [github.com/Privify-Inc/aiact-tier](https://github.com/Privify-Inc/aiact-tier) · **Fine-tuned from:**
 [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B) (Alibaba Cloud / Qwen Team, Apache 2.0) ·
 **License:** Apache 2.0. The base model's capabilities come from the Qwen team's work; please cite the
 [Qwen3 Technical Report](https://arxiv.org/abs/2505.09388) alongside this model.
@@ -51,13 +52,14 @@ compliance decision.
 ## How to use
 
 ```python
+# git clone https://github.com/Privify-Inc/aiact-tier  (the Classifier class lives in the code repo)
 from aiact_tier.predict import Classifier
-clf = Classifier("Qwen/Qwen3-4B", adapter="privify/aiact-tier-4b-v0.1")  # LoRA adapter on the base model
+clf = Classifier("Qwen/Qwen3-4B", adapter="Privify-Inc/aiact-tier-4b-v0.1")  # LoRA adapter on the base model
 print(clf.classify("A chatbot that screens job applicants and ranks them for recruiters."))
 ```
 
-Quantized files (`Q8_0`, `Q4_K_M`) run in llama.cpp, Ollama and LM Studio. Use the prompt in
-`aiact_tier/schema.py` (`SYSTEM_SHORT`). Greedy decoding is recommended.
+No quantized (GGUF) files are provided in v0.1. Use the prompt in `aiact_tier/schema.py` (`SYSTEM_SHORT`).
+Greedy decoding is recommended.
 
 ## Labels
 

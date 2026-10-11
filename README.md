@@ -1,6 +1,6 @@
 # Privify AI Act Risk-Tier Classifier (v0.1)
 
-**Author: Bhaskar Tallamraju, Privify Inc.** · Fine-tuned from Qwen3-4B · Apache 2.0 · free for anyone to use, modify and ship.
+**Author: Bhaskar Tallamraju and Vishal Saxena, Privify Inc.** · [Model on Hugging Face](https://huggingface.co/Privify-Inc/aiact-tier-4b-v0.1) · Fine-tuned from Qwen3-4B · Apache 2.0 · free for anyone to use, modify and ship.
 
 An open model that reads a plain-English description of an AI system and returns its EU AI Act
 risk tier plus the provisions that apply.
@@ -52,6 +52,14 @@ pip install -r requirements.txt pytest
 make test           # 16 tests, no GPU
 make baselines      # offline floors on the draft gold set
 make smoke          # about 1 minute, proves train -> infer -> evaluate runs on this machine
+```
+
+## Try the trained model (needs a GPU with about 10 GB; a free Kaggle or Colab T4 works)
+
+```bash
+pip install transformers peft accelerate
+python -m aiact_tier.predict "A chatbot that screens job applicants and ranks them for recruiters" \
+  --model Qwen/Qwen3-4B --adapter Privify-Inc/aiact-tier-4b-v0.1
 ```
 
 ## Reproduce on a GPU (24 GB or more)

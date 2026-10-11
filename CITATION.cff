@@ -8,6 +8,9 @@ authors:
   - family-names: "Tallamraju"
     given-names: "Bhaskar"
     affiliation: "Privify Inc."
+  - family-names: "Saxena"
+    given-names: "Vishal"
+    affiliation: "Privify Inc."
   - name: "Privify Inc."
 abstract: >-
   An open model that classifies a described AI system under the EU AI Act and returns its
